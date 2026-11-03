@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>  
+<script>
+
+function uyarı()
+{
+
+prompt("Bu bir giriş mesajıdır lütfen bir isim giriniz");
+
+}
+alert("Bu bir uyarı mesajıdı.");
+confirm("Bu bir onay mesajıdır.");
+
+
+var txt1,txt2,sayı1,sayı2;
+
+txt1="Merhaba";
+txt2="Dünya";
+
+sayı1=10;
+sayı2=20;
+
+var sonuc = sayı1+sayı2;
+
+var txtresult= txt1+" "+txt2;
+
+var modulus = sayı1 % sayı2;
+
+document.write("Sayıların toplamı:" + (sayı1+sayı2));
+    document.write("<br>"+txt1+" ");
+    document.write(txt2);
+document.write("<br>");
+
+document.write(sonuc);
+document.write("</br>");
+document.write(txtresult);
+document.write("<br>");
+document.write(sayı1+" mod "+sayı2+" 'nin değeri "+modulus+" dir.")
+
+
+var x="5"+"5";
+document.write(x);
+document.write("<br>")
+var x="5"+5;
+document.write(x);
+document.write("<br>")
+var x=5+"5";
+document.write(x)
+document.write("<br>")
+
+var age=20;
+
+if(age<18)
+{
+document.write("Reşit değilsin.");
+}
+else if(age>=18 && age<23)
+{
+document.write("Reşitsiniz ancak 23 yaşından önce üniversiteyi bititrmelisiniz.");
+}
+else
+{
+document.write("Yaşınız çok büyük.");
+}
+
+var deger1=10,deger2=20;
+document.write("<br>");
+if(deger1>5)
+{
+document.write("Birinci değer  5 ten büyüktür");
+}
+else if(deger2>10)
+{
+document.write("İkinci değer 10 dan büyüktür");
+}
+else
+{
+document.write("NE Alaka");
+}
+
+var time = new Date().getHours();
+document.write("</br>");
+if(time>8){
+document.write("Günaydın dostlar.");
+
+}
+
+else if(time>18){
+    document.write("Artık akşam oldu.");
+}
+else{
+    document.write("Artık gece oldu.");
+}
+
+
+</script>
+<form>
+<input type="button" value="Uyarı" onclick="uyarı()">
+</form>
+<marquee behavior="scroll" direction="up" scrolldelay="200" loop="2" style="border:dashed;
+width:200px">
+</body>
+</html>
